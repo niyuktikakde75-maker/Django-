@@ -1,0 +1,256 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="{% static "addtocart.css" %}">
+</head>
+<body>
+
+{% include "layout/header.html" %}
+
+    <!-- Header -->
+    <header class="header">
+        <div class="container nav">
+
+            <a href="index.html" class="logo">
+                Shop<span>Ease</span>
+            </a>
+
+            <nav class="nav-links">
+                <a href="index.html">Home</a>
+                <a href="#">Shop</a>
+                <a href="#">Categories</a>
+                <a href="#">Deals</a>
+                <a href="#">Contact</a>
+            </nav>
+
+            <div class="nav-actions">
+                <button>🔍</button>
+                <button>♡</button>
+
+                <a href="cart.html" class="cart-btn">
+                    🛒
+                    <span>2</span>
+                </a>
+            </div>
+
+        </div>
+    </header>
+
+
+    <!-- Cart Page -->
+    <main class="cart-page">
+
+        <div class="container">
+
+            <!-- Page Heading -->
+            <div class="page-heading">
+                <p>SHOPPING BAG</p>
+                <h1>Your Cart</h1>
+                <span>2 items in your cart</span>
+            </div>
+
+
+            <div class="cart-layout">
+
+                <!-- Cart Items -->
+                <section class="cart-items">
+
+                    <!-- Product 1 -->
+                    <div class="cart-item">
+
+                        <div class="product-image blue">
+                            👟
+                        </div>
+
+                        <div class="product-details">
+
+                            <p class="category">
+                                FOOTWEAR
+                            </p>
+
+                            <h2>Urban Running Shoes</h2>
+
+                            <p class="description">
+                                Comfortable running shoes for everyday use.
+                            </p>
+
+                            <div class="item-bottom">
+
+                                <div class="quantity">
+                                    <button>-</button>
+                                    <span>1</span>
+                                    <button>+</button>
+                                </div>
+
+                                <strong>$79.99</strong>
+
+                            </div>
+
+                        </div>
+
+                        <button class="remove">
+                            ×
+                        </button>
+
+                    </div>
+
+
+                    <!-- Product 2 -->
+                    <div class="cart-item">
+
+                        <div class="product-image pink">
+                            🎧
+                        </div>
+
+                        <div class="product-details">
+
+                            <p class="category">
+                                ELECTRONICS
+                            </p>
+
+                            <h2>Wireless Headphones</h2>
+
+                            <p class="description">
+                                High-quality wireless headphones with clear sound.
+                            </p>
+
+                            <div class="item-bottom">
+
+                                <div class="quantity">
+                                    <button>-</button>
+                                    <span>1</span>
+                                    <button>+</button>
+                                </div>
+
+                                <strong>$59.99</strong>
+
+                            </div>
+
+                        </div>
+
+                        <button class="remove">
+                            ×
+                        </button>
+
+                    </div>
+
+
+                    <!-- Continue Shopping -->
+                    <a href="index.html" class="continue">
+                        ← Continue Shopping
+                    </a>
+
+                </section>
+
+
+                <!-- Order Summary -->
+                <aside class="summary">
+
+                    <h2>Order Summary</h2>
+
+                    <div class="summary-row">
+                        <span>Subtotal</span>
+                        <strong>$139.98</strong>
+                    </div>
+
+                    <div class="summary-row">
+                        <span>Shipping</span>
+                        <strong class="free">FREE</strong>
+                    </div>
+
+                    <div class="summary-row">
+                        <span>Discount</span>
+                        <strong>-$10.00</strong>
+                    </div>
+
+                    <hr>
+
+                    <div class="summary-total">
+                        <span>Total</span>
+                        <strong>$129.98</strong>
+                    </div>
+
+                    <!-- Coupon -->
+                    <div class="coupon">
+
+                        <input
+                            type="text"
+                            placeholder="Coupon code"
+                        >
+
+                        <button>
+                            Apply
+                        </button>
+
+                    </div>
+
+                    <!-- Checkout -->
+                    <button class="checkout">
+                        Proceed to Checkout →
+                    </button>
+
+                    <p class="secure">
+                        🔒 Secure & encrypted checkout
+                    </p>
+
+                </aside>
+
+            </div>
+
+        </div>
+
+    </main>
+
+
+    <!-- Footer -->
+    <footer class="footer">
+
+        <div class="container footer-content">
+
+            <div>
+                <a href="#" class="logo">
+                    Shop<span>Ease</span>
+                </a>
+
+                <p>
+                    Your one-stop destination for quality products
+                    and amazing shopping experiences.
+                </p>
+            </div>
+
+            <div>
+                <h3>Customer Service</h3>
+                <a href="#">Contact Us</a>
+                <a href="#">Shipping</a>
+                <a href="#">Returns</a>
+                <a href="#">FAQs</a>
+            </div>
+
+            <div>
+                <h3>Follow Us</h3>
+
+                <div class="socials">
+                    <a href="#">f</a>
+                    <a href="#">𝕏</a>
+                    <a href="#">◎</a>
+                    <a href="#">in</a>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="copyright">
+            © 2026 ShopEase. All rights reserved.
+        </div>
+
+    </footer>
+
+
+
+    
+</body>
+</html>
