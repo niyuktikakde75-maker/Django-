@@ -1,2 +1,13 @@
-{% include "layout/header.html" %}
+{% extends 'layout/header.html' %}
 
+{% block navbar %}
+<div class="container nav">
+    <a href="#" class="logo">Shop<span>Ease</span></a>
+
+     <nav class="nav-links">
+                <a href="#categories">Categories</a>
+                <a href="#deals">Deals</a>
+     </nav>
+
+</div>
+{% endblock navbar %}
