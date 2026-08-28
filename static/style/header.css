@@ -110,3 +110,8 @@ input {
     display: grid;
     place-items: center;
 }
+.btn2{
+    padding: 10px 20px;
+    border-radius: 20px;
+    background-color: rgb(170, 110, 226);
+}
